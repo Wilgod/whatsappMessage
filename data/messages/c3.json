@@ -1,0 +1,53 @@
+{
+  "contactId": "c3",
+  "messages": [
+    {
+      "id": "m3_1",
+      "text": "Hi sweetie! Did you eat lunch?",
+      "sender": "them",
+      "hoursAgo": 3,
+      "minutesAgo": 0,
+      "status": "read"
+    },
+    {
+      "id": "m3_2",
+      "text": "Yes mom, I had a salad 😄",
+      "sender": "me",
+      "hoursAgo": 2,
+      "minutesAgo": 45,
+      "status": "read"
+    },
+    {
+      "id": "m3_3",
+      "text": "Good! Are you coming for dinner on Sunday?",
+      "sender": "them",
+      "hoursAgo": 2,
+      "minutesAgo": 30,
+      "status": "read"
+    },
+    {
+      "id": "m3_4",
+      "text": "Of course! Should I bring anything?",
+      "sender": "me",
+      "hoursAgo": 1,
+      "minutesAgo": 0,
+      "status": "read"
+    },
+    {
+      "id": "m3_5",
+      "text": "Just bring yourself! I'll make your favourite pasta 🍝",
+      "sender": "them",
+      "hoursAgo": 0,
+      "minutesAgo": 45,
+      "status": "delivered"
+    },
+    {
+      "id": "m3_6",
+      "text": "Can't wait! Love you ❤️",
+      "sender": "them",
+      "hoursAgo": 0,
+      "minutesAgo": 20,
+      "status": "delivered"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "contactId": "c2",
+  "messages": [
+    {
+      "id": "m2_1",
+      "text": "Hello! I need help with my account. I cannot log in.",
+      "sender": "me",
+      "hoursAgo": 5,
+      "minutesAgo": 0,
+      "status": "read"
+    },
+    {
+      "id": "m2_2",
+      "text": "Hi there! I'd be happy to help. Could you provide your registered email address?",
+      "sender": "them",
+      "hoursAgo": 4,
+      "minutesAgo": 50,
+      "status": "read"
+    },
+    {
+      "id": "m2_3",
+      "text": "Sure, it's user@example.com",
+      "sender": "me",
+      "hoursAgo": 4,
+      "minutesAgo": 40,
+      "status": "read"
+    },
+    {
+      "id": "m2_4",
+      "text": "Thank you! I've reset your password. You should receive an email shortly. Is there anything else I can help you with?",
+      "sender": "them",
+      "hoursAgo": 4,
+      "minutesAgo": 30,
+      "status": "read"
+    },
+    {
+      "id": "m2_5",
+      "text": "That worked, thank you!",
+      "sender": "me",
+      "hoursAgo": 4,
+      "minutesAgo": 0,
+      "status": "read"
+    }
+  ]
+}

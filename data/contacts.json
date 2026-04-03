@@ -1,0 +1,34 @@
+{
+  "contacts": [
+    {
+      "id": "c1",
+      "name": "Sarah Johnson",
+      "status": "online",
+      "unreadCount": 2
+    },
+    {
+      "id": "c2",
+      "name": "Tech Support",
+      "status": "last seen today at 9:43 AM",
+      "unreadCount": 0
+    },
+    {
+      "id": "c3",
+      "name": "Mom",
+      "status": "online",
+      "unreadCount": 1
+    },
+    {
+      "id": "c4",
+      "name": "David Chen",
+      "status": "last seen yesterday at 6:15 PM",
+      "unreadCount": 0
+    },
+    {
+      "id": "c5",
+      "name": "Pizza Palace",
+      "status": "last seen today at 11:20 AM",
+      "unreadCount": 0
+    }
+  ]
+}

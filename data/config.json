@@ -1,0 +1,12 @@
+{
+  "messageReveal": {
+    "enabled": true,
+    "delayMs": 2000,
+    "showTypingIndicator": true
+  },
+  "autoReply": {
+    "enabled": false,
+    "minDelayMs": 2000,
+    "maxDelayMs": 5000
+  }
+}

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+
+    <!-- SIDEBAR -->
+    <aside id="sidebar">
+      <header id="sidebar-header">
+        <div class="user-avatar" id="my-avatar">Me</div>
+        <div class="header-actions">
+          <button class="icon-btn" id="btn-communities" title="Communities">
+            <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+          </button>
+          <button class="icon-btn" id="btn-status" title="Status">
+            <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+          </button>
+          <button class="icon-btn" id="btn-new-chat" title="New chat">
+            <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M19.005 3.175H4.674C3.642 3.175 3 3.789 3 4.821V21.02l3.544-3.514h12.461c1.033 0 2.064-1.06 2.064-2.093V4.821c-.001-1.032-1.032-1.646-2.064-1.646zm-4.989 9.869H7.041V11.1h6.975v1.944zm3-4H7.041V7.1h9.975v1.944z"/></svg>
+          </button>
+          <!-- SETTINGS / CONFIG BUTTON -->
+          <button class="icon-btn" id="btn-config" title="Settings">
+            <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+          </button>
+          <button class="icon-btn" id="btn-menu" title="Menu">
+            <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z"/></svg>
+          </button>
+        </div>
+      </header>
+
+      <div id="search-bar">
+        <div class="search-input-wrapper">
+          <span class="search-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M15.009 13.805h-.636l-.22-.219a5.184 5.184 0 0 0 1.256-3.386 5.207 5.207 0 1 0-5.207 5.208 5.185 5.185 0 0 0 3.386-1.255l.221.22v.635l4.004 3.999 1.194-1.195-3.998-4.007zm-4.808 0a3.605 3.605 0 1 1 0-7.21 3.605 3.605 0 0 1 0 7.21z"/></svg>
+          </span>
+          <input type="text" id="search-input" placeholder="Search or start new chat" autocomplete="off">
+        </div>
+      </div>
+
+      <ul id="contact-list" role="list"></ul>
+    </aside>
+
+    <!-- CHAT PANEL -->
+    <main id="chat-panel">
+      <div id="empty-state">
+        <div class="empty-state-icon">
+          <svg viewBox="0 0 100 100" width="80" height="80"><circle cx="50" cy="50" r="48" fill="#202c33"/><path fill="#2a3942" d="M50 20c-16.57 0-30 13.43-30 30 0 5.83 1.67 11.27 4.55 15.87L22 76l10.55-2.51A29.84 29.84 0 0 0 50 80c16.57 0 30-13.43 30-30S66.57 20 50 20z"/></svg>
+        </div>
+        <h2>WhatsApp Web</h2>
+        <p>Send and receive messages without keeping your phone online.<br>Use WhatsApp on up to 4 linked devices and 1 phone at the same time.</p>
+        <div class="empty-state-hint">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+          End-to-end encrypted
+        </div>
+      </div>
+
+      <div id="active-chat" class="hidden">
+        <header id="chat-header">
+          <div class="chat-contact-avatar" id="chat-avatar"></div>
+          <div class="chat-contact-info">
+            <span class="chat-contact-name" id="chat-name"></span>
+            <span class="chat-contact-status" id="chat-status"></span>
+          </div>
+          <div class="chat-header-actions">
+            <button class="icon-btn" id="btn-search-chat" title="Search">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M15.009 13.805h-.636l-.22-.219a5.184 5.184 0 0 0 1.256-3.386 5.207 5.207 0 1 0-5.207 5.208 5.185 5.185 0 0 0 3.386-1.255l.221.22v.635l4.004 3.999 1.194-1.195-3.998-4.007zm-4.808 0a3.605 3.605 0 1 1 0-7.21 3.605 3.605 0 0 1 0 7.21z"/></svg>
+            </button>
+            <button class="icon-btn" id="btn-chat-menu" title="Menu">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z"/></svg>
+            </button>
+          </div>
+        </header>
+
+        <div id="message-area">
+          <div id="messages-container" role="log" aria-live="polite"></div>
+        </div>
+
+        <div id="sim-controls">
+          <button id="btn-simulate-reply" title="Simulate a reply from this contact">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+            Simulate Reply
+          </button>
+          <label class="toggle-label" title="Toggle to send as the other person">
+            <input type="checkbox" id="toggle-sender-mode">
+            <span class="toggle-track"></span>
+            Send as "them"
+          </label>
+        </div>
+
+        <footer id="input-bar">
+          <button class="icon-btn" id="btn-emoji" title="Emoji">
+            <svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/></svg>
+          </button>
+          <button class="icon-btn" id="btn-template" title="Message Templates">
+            <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+          </button>
+          <div id="input-wrapper">
+            <div id="message-input" contenteditable="true" role="textbox" aria-label="Type a message" aria-multiline="true" data-placeholder="Type a message"></div>
+          </div>
+          <button class="icon-btn" id="btn-attach" title="Attach">
+            <svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M16.5 6v11.5c0 2.21-1.79 4-4 4s-4-1.79-4-4V5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5v10.5c0 .55-.45 1-1 1s-1-.45-1-1V6H10v9.5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5V5c0-2.21-1.79-4-4-4S7 2.79 7 5v12.5c0 3.04 2.46 5.5 5.5 5.5s5.5-2.46 5.5-5.5V6h-1.5z"/></svg>
+          </button>
+          <button class="icon-btn" id="btn-send" title="Send or record audio">
+            <span id="icon-mic">
+              <svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/></svg>
+            </span>
+            <span id="icon-send" class="hidden">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+            </span>
+          </button>
+        </footer>
+      </div>
+    </main>
+
+  </div>
+
+  <!-- TEMPLATE PANEL -->
+  <div id="template-panel" class="hidden">
+    <div class="panel-container">
+      <header class="panel-header">
+        <button id="btn-close-templates" class="icon-btn" title="Close">
+          <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+        <h2>Message Templates</h2>
+        <button id="btn-new-template" class="btn-primary-sm" title="New template">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+          New
+        </button>
+      </header>
+
+      <div id="template-list-section">
+        <div id="template-list"></div>
+        <div id="template-empty" class="hidden">
+          <p>No templates yet. Create one to get started!</p>
+        </div>
+      </div>
+
+      <div id="template-form-section" class="hidden">
+        <h3 id="template-form-title">New Template</h3>
+        <div class="form-group">
+          <label for="template-name-input">Template Name</label>
+          <input type="text" id="template-name-input" placeholder="e.g. Order Confirmation" autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="template-body-input">Message Body</label>
+          <textarea id="template-body-input" placeholder="Hi {{name}}, your order #{{orderId}} is ready!" rows="5"></textarea>
+          <div id="variable-chips"></div>
+        </div>
+        <div id="template-preview-section">
+          <h4>Preview</h4>
+          <div id="template-variable-inputs"></div>
+          <div id="template-rendered-preview"></div>
+        </div>
+        <div class="form-actions">
+          <button id="btn-cancel-template" class="btn-secondary">Cancel</button>
+          <button id="btn-save-template" class="btn-primary">Save Template</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONFIG PANEL -->
+  <div id="config-panel" class="hidden">
+    <div class="panel-container">
+      <header class="panel-header">
+        <button id="btn-close-config" class="icon-btn" title="Close">
+          <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+        <h2>Settings</h2>
+      </header>
+
+      <div class="config-body">
+
+        <!-- MESSAGE REVEAL SECTION -->
+        <div class="config-section">
+          <div class="config-section-title">
+            <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+            Message Reveal
+          </div>
+          <p class="config-section-desc">Play conversation history one message at a time when opening a chat.</p>
+
+          <div class="config-row">
+            <span class="config-label">Enable reveal mode</span>
+            <label class="toggle-label">
+              <input type="checkbox" id="cfg-reveal-enabled">
+              <span class="toggle-track"></span>
+            </label>
+          </div>
+
+          <div class="config-row" id="cfg-delay-row">
+            <span class="config-label">
+              Delay between messages
+              <span class="config-value-badge" id="cfg-delay-badge">2.0s</span>
+            </span>
+          </div>
+          <div class="config-slider-row" id="cfg-delay-slider-row">
+            <span class="slider-min">0.5s</span>
+            <input type="range" id="cfg-reveal-delay" min="500" max="5000" step="500" value="2000">
+            <span class="slider-max">5.0s</span>
+          </div>
+
+          <div class="config-row">
+            <span class="config-label">Show typing indicator</span>
+            <label class="toggle-label">
+              <input type="checkbox" id="cfg-show-typing">
+              <span class="toggle-track"></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- AUTO REPLY SECTION -->
+        <div class="config-section">
+          <div class="config-section-title">
+            <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M21 6.5l-4-4-8.5 8.5-1 4 4-1L21 6.5zM5 20h-2v-2H1v-2h2v-2h2v2h2v2H5v2z"/></svg>
+            Auto Reply
+          </div>
+          <p class="config-section-desc">Automatically simulate a reply after you send a message.</p>
+
+          <div class="config-row">
+            <span class="config-label">Enable auto reply</span>
+            <label class="toggle-label">
+              <input type="checkbox" id="cfg-autoreply-enabled">
+              <span class="toggle-track"></span>
+            </label>
+          </div>
+
+          <div class="config-row">
+            <span class="config-label">
+              Reply delay range
+              <span class="config-value-badge" id="cfg-reply-delay-badge">2–5s</span>
+            </span>
+          </div>
+          <div class="config-slider-row">
+            <span class="slider-min">1s</span>
+            <input type="range" id="cfg-reply-min-delay" min="1000" max="8000" step="500" value="2000">
+            <span class="slider-max">8s min</span>
+          </div>
+          <div class="config-slider-row">
+            <span class="slider-min">2s</span>
+            <input type="range" id="cfg-reply-max-delay" min="2000" max="10000" step="500" value="5000">
+            <span class="slider-max">10s max</span>
+          </div>
+        </div>
+
+        <!-- DATA SECTION -->
+        <div class="config-section">
+          <div class="config-section-title">
+            <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M20 6h-2.18c.07-.44.18-.88.18-1.34C18 2.54 15.73.5 13 .5c-1.6 0-3 .77-3.91 1.96C8.12 1.27 6.73.5 5.18.5 2.45.5.18 2.54.18 4.66c0 .46.09.9.18 1.34H-1v14h21V6zM13 2.5c1.49 0 2.7 1.09 2.7 2.43 0 .59-.23 1.16-.65 1.57H10.95c-.42-.41-.65-.98-.65-1.57C10.3 3.59 11.51 2.5 13 2.5z"/></svg>
+            Data
+          </div>
+          <p class="config-section-desc">Manage conversation data. Reload from JSON files to restore defaults.</p>
+
+          <div class="config-row">
+            <span class="config-label">Data source</span>
+            <span class="config-value-badge" id="cfg-data-source">JSON files</span>
+          </div>
+
+          <div class="config-actions">
+            <button id="btn-reload-json" class="btn-secondary">
+              <svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+              Reload from JSON
+            </button>
+            <button id="btn-clear-data" class="btn-danger">
+              <svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+              Clear All Data
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- FILL VARIABLES MODAL -->
+  <div id="fill-modal" class="modal-overlay hidden">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 id="fill-modal-title">Fill Template Variables</h3>
+        <button id="btn-fill-close" class="icon-btn">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </div>
+      <div id="fill-inputs"></div>
+      <div id="fill-preview-box"></div>
+      <div class="modal-actions">
+        <button id="btn-fill-cancel" class="btn-secondary">Cancel</button>
+        <button id="btn-fill-confirm" class="btn-primary">Insert into Chat</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATIONS -->
+  <div id="toast-container"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
