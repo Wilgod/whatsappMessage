@@ -3,51 +3,283 @@
   "messages": [
     {
       "id": "m3_1",
-      "text": "Hi sweetie! Did you eat lunch?",
+      "text": "好久不見 最近還好嗎?",
       "sender": "them",
-      "hoursAgo": 3,
-      "minutesAgo": 0,
+      "timestamp": "2026-04-04T09:00:00",
       "status": "read"
     },
     {
       "id": "m3_2",
-      "text": "Yes mom, I had a salad 😄",
+      "text": "你 最近還好嗎 ? 尚愛看少女漫畫嗎 ?",
       "sender": "me",
-      "hoursAgo": 2,
-      "minutesAgo": 45,
+      "timestamp": "2026-04-04T09:15:00",
       "status": "read"
     },
     {
       "id": "m3_3",
-      "text": "Good! Are you coming for dinner on Sunday?",
+      "text": "我是小凱啊, 還記得我嗎?",
       "sender": "them",
-      "hoursAgo": 2,
-      "minutesAgo": 30,
+      "timestamp": "2026-04-04T09:30:00",
       "status": "read"
     },
     {
       "id": "m3_4",
-      "text": "Of course! Should I bring anything?",
-      "sender": "me",
-      "hoursAgo": 1,
-      "minutesAgo": 0,
-      "status": "read"
+      "text": "我就一般般吧, 你呢?",
+      "sender": "them",
+      "timestamp": "2026-04-04T11:00:00",
+      "status": "read",
+      "replyTo": {
+        "text": "你 最近還好嗎 ? 尚愛看少女漫畫嗎 ?",
+        "sender": "me"
+      }
     },
     {
       "id": "m3_5",
-      "text": "Just bring yourself! I'll make your favourite pasta 🍝",
-      "sender": "them",
-      "hoursAgo": 0,
-      "minutesAgo": 45,
-      "status": "delivered"
+      "text": "真想帶你見見 我剛識到的她\n我想聽你意見 這算是病吧 ?",
+      "sender": "me",
+      "timestamp": "2026-04-04T11:15:00",
+      "status": "read"
     },
     {
       "id": "m3_6",
-      "text": "Can't wait! Love you ❤️",
+      "text": "應該是想你的病吧!",
       "sender": "them",
-      "hoursAgo": 0,
-      "minutesAgo": 20,
-      "status": "delivered"
+      "timestamp": "2026-04-04T11:40:00",
+      "status": "delivered",
+      "replyTo": {
+        "text": "真想帶你見見 我剛識到的她\n我想聽你意見 這算是病吧 ?",
+        "sender": "me"
+      }
+    },
+    {
+      "id": "m3_7",
+      "text": "為何無論我 願意怎樣試 怎樣也\n不可一樣愛慕她 ?",
+      "sender": "me",
+      "timestamp": "2026-04-04T11:42:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_8",
+      "text": "好好珍惜眼前人吧!",
+      "sender": "them",
+      "timestamp": "2026-04-05T10:00:00",
+      "status": "read",
+      "nextPage": true,
+      "replyTo": {
+        "text": "為何無論我 願意怎樣試 怎樣也\n不可一樣愛慕她 ?",
+        "sender": "me"
+      }
+    },
+    {
+      "id": "m3_9",
+      "text": "難道沒練習太耐 感覺都追不回來",
+      "sender": "me",
+      "timestamp": "2026-04-04T11:42:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_10",
+      "text": "勇敢去面對",
+      "sender": "them",
+      "timestamp": "2026-04-04T09:30:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_11",
+      "text": "試圖再 努力愛 也顯得不自在",
+      "sender": "me",
+      "timestamp": "2026-04-04T11:42:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_12",
+      "text": "發你照片給我看看嗎",
+      "sender": "them",
+      "timestamp": "2026-04-04T09:30:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_13",
+      "text": "不懂得如何談戀愛",
+      "sender": "me",
+      "timestamp": "2026-04-04T11:42:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_14",
+      "text": "發給我我教你",
+      "sender": "them",
+      "timestamp": "2026-04-04T09:30:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_15",
+      "text": "還是我太愛你 對過去太放不開",
+      "sender": "me",
+      "timestamp": "2026-04-04T11:42:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_16",
+      "text": "不要這樣 叫寶寶",
+      "sender": "them",
+      "timestamp": "2026-04-04T09:30:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_17",
+      "text": "難道是寂寞太耐 生銹的鎖不能開",
+      "sender": "me",
+      "timestamp": "2026-04-04T11:42:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_18",
+      "text": "哈哈哈哈",
+      "sender": "them",
+      "timestamp": "2026-04-04T09:30:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_19",
+      "text": "我要瘋了",
+      "sender": "them",
+      "timestamp": "2026-04-04T09:30:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_20",
+      "text": "鑰匙也 折斷了 留在舊患所在",
+      "sender": "me",
+      "timestamp": "2026-04-04T11:42:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_21",
+      "text": "懷內 放滿對你的愛",
+      "sender": "me",
+      "timestamp": "2026-04-04T11:42:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_22",
+      "text": "難怪跟誰也 再沒法戀愛",
+      "sender": "me",
+      "timestamp": "2026-04-04T11:42:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_23",
+      "phone": true,
+      "text": "未接語音通話\n點按即可回電",
+      "sender": "them",
+      "timestamp": "2026-04-05T10:00:00",
+      "nextPage": true
+    },
+    {
+      "id": "m3_24",
+      "text": "接我電話",
+      "sender": "them",
+      "timestamp": "2026-04-04T09:30:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_25",
+      "text": "我 有時仍很怕 路過你那從前的家",
+      "sender": "me",
+      "timestamp": "2026-04-04T11:42:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_26",
+      "phone": true,
+      "text": "未接語音通話\n點按即可回電",
+      "sender": "them",
+      "timestamp": "2026-04-05T10:00:00"
+    },
+    {
+      "id": "m3_27",
+      "text": "往事若然未落幕 再揭起有害嗎？",
+      "sender": "me",
+      "timestamp": "2026-04-04T11:42:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_28",
+      "text": "疼",
+      "sender": "them",
+      "timestamp": "2026-04-04T09:30:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_29",
+      "text": "真想帶你見見 我剛識到的她",
+      "sender": "me",
+      "timestamp": "2026-04-04T11:42:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_30",
+      "text": "我想聽你意見 這算是病吧 ?",
+      "sender": "me",
+      "timestamp": "2026-04-04T11:42:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_31",
+      "phone": true,
+      "text": "未接語音通話\n點按即可回電",
+      "sender": "them",
+      "timestamp": "2026-04-05T10:00:00"
+    },
+    {
+      "id": "m3_32",
+      "phone": true,
+      "text": "未接語音通話\n點按即可回電",
+      "sender": "them",
+      "timestamp": "2026-04-05T10:00:00"
+    },
+    {
+      "id": "m3_33",
+      "phone": true,
+      "text": "未接語音通話\n點按即可回電",
+      "sender": "them",
+      "timestamp": "2026-04-05T10:00:00"
+    },
+    {
+      "id": "m3_34",
+      "text": "為何無論我願意怎樣試,怎樣也沒令自己戀上她 ?",
+      "sender": "me",
+      "timestamp": "2026-04-04T11:42:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_35",
+      "phone": true,
+      "text": "未接語音通話\n點按即可回電",
+      "sender": "them",
+      "timestamp": "2026-04-05T10:00:00"
+    },
+    {
+      "id": "m3_36",
+      "text": "難道沒練習太耐 感覺都追不回來",
+      "sender": "me",
+      "timestamp": "2026-04-04T11:42:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_37",
+      "text": "試圖再 努力愛 也顯得不自在",
+      "sender": "me",
+      "timestamp": "2026-04-04T11:42:00",
+      "status": "read"
+    },
+    {
+      "id": "m3_38",
+      "text": "不懂得如何談戀愛",
+      "sender": "me",
+      "timestamp": "2026-04-04T11:42:00",
+      "status": "read"
     }
   ]
 }

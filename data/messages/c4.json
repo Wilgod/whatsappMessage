@@ -5,32 +5,28 @@
       "id": "m4_1",
       "text": "Hey, did you finish the Q3 report?",
       "sender": "them",
-      "hoursAgo": 28,
-      "minutesAgo": 0,
+      "timestamp": "2026-04-03T08:00:00",
       "status": "read"
     },
     {
       "id": "m4_2",
       "text": "Almost done, will send it over by EOD",
       "sender": "me",
-      "hoursAgo": 27,
-      "minutesAgo": 0,
+      "timestamp": "2026-04-03T09:00:00",
       "status": "read"
     },
     {
       "id": "m4_3",
       "text": "Great, thanks! Also, can we reschedule the standup to 10am tomorrow?",
       "sender": "them",
-      "hoursAgo": 26,
-      "minutesAgo": 0,
+      "timestamp": "2026-04-03T10:00:00",
       "status": "read"
     },
     {
       "id": "m4_4",
       "text": "10am works for me 👍",
       "sender": "me",
-      "hoursAgo": 25,
-      "minutesAgo": 0,
+      "timestamp": "2026-04-03T11:00:00",
       "status": "read"
     }
   ]

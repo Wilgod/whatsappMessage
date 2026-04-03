@@ -5,24 +5,21 @@
       "id": "m5_1",
       "text": "Your order #4521 has been confirmed! Estimated delivery: 30-45 min 🍕",
       "sender": "them",
-      "hoursAgo": 1,
-      "minutesAgo": 30,
+      "timestamp": "2026-04-04T10:30:00",
       "status": "read"
     },
     {
       "id": "m5_2",
       "text": "Great, thank you!",
       "sender": "me",
-      "hoursAgo": 1,
-      "minutesAgo": 20,
+      "timestamp": "2026-04-04T10:40:00",
       "status": "read"
     },
     {
       "id": "m5_3",
       "text": "Your order is on the way! Track here: [link]",
       "sender": "them",
-      "hoursAgo": 0,
-      "minutesAgo": 55,
+      "timestamp": "2026-04-04T11:05:00",
       "status": "read"
     }
   ]

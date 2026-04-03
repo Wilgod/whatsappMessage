@@ -5,48 +5,42 @@
       "id": "m1_1",
       "text": "Hey! Are you free this weekend?",
       "sender": "them",
-      "hoursAgo": 26,
-      "minutesAgo": 0,
+      "timestamp": "2026-04-03T10:00:00",
       "status": "read"
     },
     {
       "id": "m1_2",
       "text": "Yes! What are you thinking?",
       "sender": "me",
-      "hoursAgo": 25,
-      "minutesAgo": 0,
+      "timestamp": "2026-04-03T11:00:00",
       "status": "read"
     },
     {
       "id": "m1_3",
       "text": "Maybe brunch on Saturday? I found this new place downtown 😊",
       "sender": "them",
-      "hoursAgo": 24,
-      "minutesAgo": 55,
+      "timestamp": "2026-04-03T11:05:00",
       "status": "read"
     },
     {
       "id": "m1_4",
       "text": "That sounds amazing! What time?",
       "sender": "me",
-      "hoursAgo": 24,
-      "minutesAgo": 0,
+      "timestamp": "2026-04-03T12:00:00",
       "status": "read"
     },
     {
       "id": "m1_5",
       "text": "How about 11am? They have great avocado toast 🥑",
       "sender": "them",
-      "hoursAgo": 2,
-      "minutesAgo": 0,
+      "timestamp": "2026-04-04T10:00:00",
       "status": "delivered"
     },
     {
       "id": "m1_6",
       "text": "Perfect! See you there 👍",
       "sender": "them",
-      "hoursAgo": 0,
-      "minutesAgo": 30,
+      "timestamp": "2026-04-04T11:30:00",
       "status": "delivered"
     }
   ]

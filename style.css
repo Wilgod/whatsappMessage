@@ -464,6 +464,33 @@ a { color: inherit; text-decoration: none; }
   white-space: pre-wrap;
 }
 
+/* REPLY PREVIEW */
+.reply-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 5px 8px;
+  margin-bottom: 4px;
+  border-left: 3px solid var(--color-primary);
+  border-radius: 4px;
+  background: rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+.reply-sender {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.reply-text {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .message-meta {
   display: flex;
   align-items: center;
@@ -487,6 +514,57 @@ a { color: inherit; text-decoration: none; }
   color: var(--tick-gray);
 }
 .tick-icon.read { color: var(--tick-blue); }
+
+.tick-img {
+  width: 18px;
+  height: 10px;
+  vertical-align: middle;
+}
+.tick-img.tick-sent { opacity: 0.6; }
+.tick-img.tick-delivered { opacity: 0.6; }
+.tick-img.tick-read {
+  filter: brightness(0) saturate(100%) invert(55%) sepia(93%) saturate(300%) hue-rotate(170deg) brightness(100%) contrast(92%);
+}
+
+/* MISSED CALL BUBBLE */
+.phone-call-bubble {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.phone-call-inner {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: #191d20;
+  padding: 10px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.phone-call-inner .message-meta {
+  float: none;
+  width: 100%;
+}
+
+.phone-call-icon {
+  color: #f87171;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  background: black;
+  padding: 13px;
+  border-radius: 50%;
+
+}
+
+.phone-call-text {
+  font-size: 14.2px;
+  line-height: 19px;
+  color: var(--text-primary);
+  white-space: pre-wrap;
+}
 
 /* SIM CONTROLS */
 #sim-controls {

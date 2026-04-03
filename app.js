@@ -25,41 +25,40 @@ const M = 60000;
 
 // Fallback messages (mirrors data/messages/cX.json)
 function buildFallbackMessages() {
-  const n = Date.now();
   return {
     c1: [
-      { id: 'm1_1', contactId: 'c1', text: 'Hey! Are you free this weekend?', sender: 'them', timestamp: n - 26*H, status: 'read' },
-      { id: 'm1_2', contactId: 'c1', text: 'Yes! What are you thinking?', sender: 'me', timestamp: n - 25*H, status: 'read' },
-      { id: 'm1_3', contactId: 'c1', text: 'Maybe brunch on Saturday? I found this new place downtown 😊', sender: 'them', timestamp: n - 24*H - 55*M, status: 'read' },
-      { id: 'm1_4', contactId: 'c1', text: 'That sounds amazing! What time?', sender: 'me', timestamp: n - 24*H, status: 'read' },
-      { id: 'm1_5', contactId: 'c1', text: 'How about 11am? They have great avocado toast 🥑', sender: 'them', timestamp: n - 2*H, status: 'delivered' },
-      { id: 'm1_6', contactId: 'c1', text: 'Perfect! See you there 👍', sender: 'them', timestamp: n - 30*M, status: 'delivered' },
+      { id: 'm1_1', contactId: 'c1', text: 'Hey! Are you free this weekend?', sender: 'them', timestamp: new Date('2026-04-03T10:00:00').getTime(), status: 'read' },
+      { id: 'm1_2', contactId: 'c1', text: 'Yes! What are you thinking?', sender: 'me', timestamp: new Date('2026-04-03T11:00:00').getTime(), status: 'read' },
+      { id: 'm1_3', contactId: 'c1', text: 'Maybe brunch on Saturday? I found this new place downtown 😊', sender: 'them', timestamp: new Date('2026-04-03T11:05:00').getTime(), status: 'read' },
+      { id: 'm1_4', contactId: 'c1', text: 'That sounds amazing! What time?', sender: 'me', timestamp: new Date('2026-04-03T12:00:00').getTime(), status: 'read' },
+      { id: 'm1_5', contactId: 'c1', text: 'How about 11am? They have great avocado toast 🥑', sender: 'them', timestamp: new Date('2026-04-04T10:00:00').getTime(), status: 'delivered' },
+      { id: 'm1_6', contactId: 'c1', text: 'Perfect! See you there 👍', sender: 'them', timestamp: new Date('2026-04-04T11:30:00').getTime(), status: 'delivered' },
     ],
     c2: [
-      { id: 'm2_1', contactId: 'c2', text: 'Hello! I need help with my account. I cannot log in.', sender: 'me', timestamp: n - 5*H, status: 'read' },
-      { id: 'm2_2', contactId: 'c2', text: "Hi there! I'd be happy to help. Could you provide your registered email address?", sender: 'them', timestamp: n - 4*H - 50*M, status: 'read' },
-      { id: 'm2_3', contactId: 'c2', text: "Sure, it's user@example.com", sender: 'me', timestamp: n - 4*H - 40*M, status: 'read' },
-      { id: 'm2_4', contactId: 'c2', text: "Thank you! I've reset your password. You should receive an email shortly.", sender: 'them', timestamp: n - 4*H - 30*M, status: 'read' },
-      { id: 'm2_5', contactId: 'c2', text: 'That worked, thank you!', sender: 'me', timestamp: n - 4*H, status: 'read' },
+      { id: 'm2_1', contactId: 'c2', text: 'Hello! I need help with my account. I cannot log in.', sender: 'me', timestamp: new Date('2026-04-04T07:00:00').getTime(), status: 'read' },
+      { id: 'm2_2', contactId: 'c2', text: "Hi there! I'd be happy to help. Could you provide your registered email address?", sender: 'them', timestamp: new Date('2026-04-04T07:10:00').getTime(), status: 'read' },
+      { id: 'm2_3', contactId: 'c2', text: "Sure, it's user@example.com", sender: 'me', timestamp: new Date('2026-04-04T07:20:00').getTime(), status: 'read' },
+      { id: 'm2_4', contactId: 'c2', text: "Thank you! I've reset your password. You should receive an email shortly.", sender: 'them', timestamp: new Date('2026-04-04T07:30:00').getTime(), status: 'read' },
+      { id: 'm2_5', contactId: 'c2', text: 'That worked, thank you!', sender: 'me', timestamp: new Date('2026-04-04T08:00:00').getTime(), status: 'read' },
     ],
     c3: [
-      { id: 'm3_1', contactId: 'c3', text: 'Hi sweetie! Did you eat lunch?', sender: 'them', timestamp: n - 3*H, status: 'read' },
-      { id: 'm3_2', contactId: 'c3', text: 'Yes mom, I had a salad 😄', sender: 'me', timestamp: n - 2*H - 45*M, status: 'read' },
-      { id: 'm3_3', contactId: 'c3', text: 'Good! Are you coming for dinner on Sunday?', sender: 'them', timestamp: n - 2*H - 30*M, status: 'read' },
-      { id: 'm3_4', contactId: 'c3', text: 'Of course! Should I bring anything?', sender: 'me', timestamp: n - 1*H, status: 'read' },
-      { id: 'm3_5', contactId: 'c3', text: "Just bring yourself! I'll make your favourite pasta 🍝", sender: 'them', timestamp: n - 45*M, status: 'delivered' },
-      { id: 'm3_6', contactId: 'c3', text: "Can't wait! Love you ❤️", sender: 'them', timestamp: n - 20*M, status: 'delivered' },
+      { id: 'm3_1', contactId: 'c3', text: 'Hi sweetie! Did you eat lunch?', sender: 'them', timestamp: new Date('2026-04-04T09:00:00').getTime(), status: 'read' },
+      { id: 'm3_2', contactId: 'c3', text: 'Yes mom, I had a salad 😄', sender: 'me', timestamp: new Date('2026-04-04T09:15:00').getTime(), status: 'read' },
+      { id: 'm3_3', contactId: 'c3', text: 'Good! Are you coming for dinner on Sunday?', sender: 'them', timestamp: new Date('2026-04-04T09:30:00').getTime(), status: 'read' },
+      { id: 'm3_4', contactId: 'c3', text: 'Of course! Should I bring anything?', sender: 'me', timestamp: new Date('2026-04-04T11:00:00').getTime(), status: 'read', replyTo: { text: '你 最近還好嗎 ? 尚愛看少女漫畫嗎 ?', sender: 'me' } },
+      { id: 'm3_5', contactId: 'c3', text: "Just bring yourself! I'll make your favourite pasta 🍝", sender: 'them', timestamp: new Date('2026-04-04T11:15:00').getTime(), status: 'delivered' },
+      { id: 'm3_6', contactId: 'c3', text: "Can't wait! Love you ❤️", sender: 'them', timestamp: new Date('2026-04-04T11:40:00').getTime(), status: 'delivered' },
     ],
     c4: [
-      { id: 'm4_1', contactId: 'c4', text: 'Hey, did you finish the Q3 report?', sender: 'them', timestamp: n - 28*H, status: 'read' },
-      { id: 'm4_2', contactId: 'c4', text: 'Almost done, will send it over by EOD', sender: 'me', timestamp: n - 27*H, status: 'read' },
-      { id: 'm4_3', contactId: 'c4', text: 'Great, thanks! Also, can we reschedule the standup to 10am tomorrow?', sender: 'them', timestamp: n - 26*H, status: 'read' },
-      { id: 'm4_4', contactId: 'c4', text: '10am works for me 👍', sender: 'me', timestamp: n - 25*H, status: 'read' },
+      { id: 'm4_1', contactId: 'c4', text: 'Hey, did you finish the Q3 report?', sender: 'them', timestamp: new Date('2026-04-03T08:00:00').getTime(), status: 'read' },
+      { id: 'm4_2', contactId: 'c4', text: 'Almost done, will send it over by EOD', sender: 'me', timestamp: new Date('2026-04-03T09:00:00').getTime(), status: 'read' },
+      { id: 'm4_3', contactId: 'c4', text: 'Great, thanks! Also, can we reschedule the standup to 10am tomorrow?', sender: 'them', timestamp: new Date('2026-04-03T10:00:00').getTime(), status: 'read' },
+      { id: 'm4_4', contactId: 'c4', text: '10am works for me 👍', sender: 'me', timestamp: new Date('2026-04-03T11:00:00').getTime(), status: 'read' },
     ],
     c5: [
-      { id: 'm5_1', contactId: 'c5', text: 'Your order #4521 has been confirmed! Estimated delivery: 30-45 min 🍕', sender: 'them', timestamp: n - 1*H - 30*M, status: 'read' },
-      { id: 'm5_2', contactId: 'c5', text: 'Great, thank you!', sender: 'me', timestamp: n - 1*H - 20*M, status: 'read' },
-      { id: 'm5_3', contactId: 'c5', text: 'Your order is on the way! Track here: [link]', sender: 'them', timestamp: n - 55*M, status: 'read' },
+      { id: 'm5_1', contactId: 'c5', text: 'Your order #4521 has been confirmed! Estimated delivery: 30-45 min 🍕', sender: 'them', timestamp: new Date('2026-04-04T10:30:00').getTime(), status: 'read' },
+      { id: 'm5_2', contactId: 'c5', text: 'Great, thank you!', sender: 'me', timestamp: new Date('2026-04-04T10:40:00').getTime(), status: 'read' },
+      { id: 'm5_3', contactId: 'c5', text: 'Your order is on the way! Track here: [link]', sender: 'them', timestamp: new Date('2026-04-04T11:05:00').getTime(), status: 'read' },
     ],
   };
 }
@@ -184,10 +183,8 @@ function loadConfig() {
    ============================================================ */
 
 function convertJsonMessage(raw, contactId) {
-  // JSON messages use hoursAgo/minutesAgo for relative timestamps
-  const ts = Date.now()
-    - (raw.hoursAgo   || 0) * H
-    - (raw.minutesAgo || 0) * M;
+  // JSON messages use hardcoded ISO 8601 timestamps
+  const ts = new Date(raw.timestamp).getTime();
   return {
     id:        raw.id,
     contactId: contactId,
@@ -195,6 +192,9 @@ function convertJsonMessage(raw, contactId) {
     sender:    raw.sender,
     timestamp: ts,
     status:    raw.status || 'read',
+    replyTo:   raw.replyTo || null,
+    nextPage:  raw.nextPage || false,
+    phone:     raw.phone || false,
   };
 }
 
@@ -229,23 +229,7 @@ async function loadFromJSON() {
 async function initData() {
   loadConfig();
 
-  const stored = loadFromLocalStorage();
-
-  if (stored && stored.contacts && stored.contacts.length > 0) {
-    contacts  = stored.contacts;
-    messages  = stored.messages || {};
-    templates = stored.templates || [];
-    AppState.dataSource = 'localStorage';
-
-    // Ensure all contacts have a messages array
-    for (const c of contacts) {
-      if (!messages[c.id]) messages[c.id] = [];
-    }
-    if (templates.length === 0) templates = SEED_TEMPLATES.map(t => ({ ...t }));
-    return;
-  }
-
-  // No stored data — try JSON files first
+  // Always try JSON files first
   const fromJSON = await loadFromJSON();
 
   if (fromJSON) {
@@ -253,13 +237,46 @@ async function initData() {
     messages  = fromJSON.messages;
     templates = SEED_TEMPLATES.map(t => ({ ...t }));
     AppState.dataSource = 'json';
+
+    // Merge user-sent messages (IDs starting with "msg_") from localStorage
+    const stored = loadFromLocalStorage();
+    if (stored && stored.messages) {
+      for (const [contactId, storedMsgs] of Object.entries(stored.messages)) {
+        if (!Array.isArray(storedMsgs)) continue;
+        const userMsgs = storedMsgs.filter(m => m.id && m.id.startsWith('msg_'));
+        if (userMsgs.length > 0) {
+          if (!messages[contactId]) messages[contactId] = [];
+          // Avoid duplicates by ID
+          const existingIds = new Set(messages[contactId].map(m => m.id));
+          for (const m of userMsgs) {
+            if (!existingIds.has(m.id)) messages[contactId].push(m);
+          }
+          messages[contactId].sort((a, b) => a.timestamp - b.timestamp);
+        }
+      }
+    }
   } else {
-    // Full fallback to embedded seed data
-    contacts  = FALLBACK_CONTACTS.map(c => ({ ...c }));
-    messages  = buildFallbackMessages();
-    templates = SEED_TEMPLATES.map(t => ({ ...t }));
-    AppState.dataSource = 'fallback';
+    // JSON fetch failed — fall back to localStorage, then embedded data
+    const stored = loadFromLocalStorage();
+
+    if (stored && stored.contacts && stored.contacts.length > 0) {
+      contacts  = stored.contacts;
+      messages  = stored.messages || {};
+      templates = stored.templates || [];
+      AppState.dataSource = 'localStorage';
+    } else {
+      contacts  = FALLBACK_CONTACTS.map(c => ({ ...c }));
+      messages  = buildFallbackMessages();
+      templates = SEED_TEMPLATES.map(t => ({ ...t }));
+      AppState.dataSource = 'fallback';
+    }
   }
+
+  // Ensure all contacts have a messages array
+  for (const c of contacts) {
+    if (!messages[c.id]) messages[c.id] = [];
+  }
+  if (templates.length === 0) templates = SEED_TEMPLATES.map(t => ({ ...t }));
 
   saveToLocalStorage();
 }
@@ -341,10 +358,9 @@ function parseVariables(body) {
 
 function getTickSVG(status) {
   if (status === 'sent') {
-    return `<svg viewBox="0 0 16 11" width="16" height="11"><path d="M11.071 0 4.244 6.839 1.071 3.654 0 4.726 4.244 9 12.143 1.071Z" fill="currentColor"/></svg>`;
+    return `<img src="image/tick.png" alt="sent" class="tick-img tick-sent">`;
   }
-  const doubleTick = `<svg viewBox="0 0 18 11" width="18" height="11"><path d="M17.394 0 9.535 7.881 5.647 3.983l-1.07 1.07L9.535 10.02 18.464 1.07ZM1.07 7.881 5.647 3.983l-1.07-1.07L0 4.913 4.577 9.49 5.647 10.56 6.717 9.49l-.001-.001Z" fill="currentColor"/></svg>`;
-  return doubleTick;
+  return `<img src="image/tick.png" alt="${status}" class="tick-img tick-${status === 'read' ? 'read' : 'delivered'}">`;
 }
 
 function makeDateDivider(text) {
@@ -501,11 +517,16 @@ function cancelReveal() {
   if (ti) ti.remove();
 }
 
-/** Build an ordered list of { type:'divider'|'message', ... } items */
+/** Build an ordered list of { type:'divider'|'message'|'nextPage', ... } items */
 function buildMessageItems(msgs) {
   const items = [];
   let lastDate = null;
   for (const msg of msgs) {
+    if (msg.nextPage) {
+      // Insert a page-break marker; resets the date so a new divider appears after it
+      items.push({ type: 'nextPage' });
+      lastDate = null;
+    }
     const dateStr = formatDateDivider(msg.timestamp);
     if (dateStr !== lastDate) {
       items.push({ type: 'divider', text: dateStr });
@@ -526,8 +547,12 @@ function renderMessages(contactId) {
   const items = buildMessageItems(msgs);
 
   if (!appConfig.messageReveal.enabled || msgs.length === 0) {
-    // Instant mode — show everything at once
+    // Instant mode — show everything at once (skip page-break markers)
     for (const item of items) {
+      if (item.type === 'nextPage') {
+        container.innerHTML = '';
+        continue;
+      }
       if (item.type === 'divider') container.appendChild(makeDateDivider(item.text));
       else container.appendChild(renderMessageBubble(item.msg));
     }
@@ -535,49 +560,57 @@ function renderMessages(contactId) {
     return;
   }
 
-  // Reveal mode — show one message at a time
+  // Reveal mode — show one message at a time, with page breaks
   const delayMs = appConfig.messageReveal.delayMs;
   const showTyping = appConfig.messageReveal.showTypingIndicator;
-  let msgCount = 0;
+  let t = 0; // cumulative absolute time in ms
 
   for (const item of items) {
-    if (item.type === 'divider') {
-      // Schedule divider just before its first message (same msgCount slot)
-      const idx = msgCount;
-      const t = setTimeout(() => {
-        container.appendChild(makeDateDivider(item.text));
-        scrollToBottom();
-      }, idx * delayMs);
-      revealTimers.push(t);
+    if (item.type === 'nextPage') {
+      // Schedule a page clear, then add a gap before the next page starts
+      const clearAt = t;
+      const timer = setTimeout(() => {
+        container.innerHTML = '';
+      }, clearAt);
+      revealTimers.push(timer);
+      t += delayMs; // gap after clear before next message
       continue;
     }
 
-    const idx = msgCount;
+    if (item.type === 'divider') {
+      const at = t;
+      const timer = setTimeout(() => {
+        container.appendChild(makeDateDivider(item.text));
+        scrollToBottom();
+      }, at);
+      revealTimers.push(timer);
+      continue;
+    }
+
+    // Message item
+    const at = t;
     const msg = item.msg;
-    msgCount++;
+    t += delayMs;
 
     if (showTyping && msg.sender === 'them') {
-      // Show typing indicator (delayMs/2 before the message appears)
-      const typingDelay = Math.max(0, idx * delayMs - delayMs / 2);
+      const typingAt = Math.max(0, at - delayMs / 2);
       const tTyping = setTimeout(() => {
-        // Remove any previous typing indicator
         const prev = document.getElementById('typing-indicator-el');
         if (prev) prev.remove();
         const typingEl = createTypingIndicator();
         typingEl.id = 'typing-indicator-el';
         container.appendChild(typingEl);
         scrollToBottom();
-      }, typingDelay);
+      }, typingAt);
       revealTimers.push(tTyping);
     }
 
     const tMsg = setTimeout(() => {
-      // Remove typing indicator if present
       const ti = document.getElementById('typing-indicator-el');
       if (ti) ti.remove();
       container.appendChild(renderMessageBubble(msg));
       scrollToBottom();
-    }, idx * delayMs);
+    }, at);
     revealTimers.push(tMsg);
   }
 }
@@ -598,6 +631,53 @@ function renderMessageBubble(msg) {
 
   const bubble = document.createElement('div');
   bubble.className = 'message-bubble';
+
+  if (msg.phone) {
+    bubble.classList.add('phone-call-bubble');
+
+    const inner = document.createElement('div');
+    inner.className = 'phone-call-inner';
+
+    const icon = document.createElement('span');
+    icon.className = 'phone-call-icon';
+    icon.innerHTML = `<svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>`;
+
+    const label = document.createElement('p');
+    label.className = 'phone-call-text';
+    label.textContent = msg.text || '未接語音通話\n點按即可回電';
+    label.style.whiteSpace = 'pre-wrap';
+
+    const meta = document.createElement('div');
+    meta.className = 'message-meta';
+
+    const time = document.createElement('span');
+    time.className = 'message-time';
+    time.textContent = new Date(msg.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    meta.appendChild(time);
+
+    inner.append(icon, label, meta);
+
+    bubble.appendChild(inner);
+    wrapper.appendChild(bubble);
+    return wrapper;
+  }
+
+  if (msg.replyTo) {
+    const replyPreview = document.createElement('div');
+    replyPreview.className = 'reply-preview';
+
+    const replySender = document.createElement('span');
+    replySender.className = 'reply-sender';
+    replySender.textContent = msg.replyTo.sender === 'me' ? 'You' : 'Them';
+
+    const replyText = document.createElement('span');
+    replyText.className = 'reply-text';
+    const truncated = msg.replyTo.text.length > 60 ? msg.replyTo.text.slice(0, 60) + '…' : msg.replyTo.text;
+    replyText.textContent = truncated;
+
+    replyPreview.append(replySender, replyText);
+    bubble.appendChild(replyPreview);
+  }
 
   const text = document.createElement('p');
   text.className = 'message-text';
